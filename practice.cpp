@@ -24,11 +24,11 @@ class Teacher{
     }
     
     void printVal(){
-        cout<<name<<" "<<salary<<" "<<id<<" "<<fixed<<setprecision(2)<<*cgpaptr<<endl;
+        cout<<name<<" "<<salary<<" "<<id<<" "<<fixed << setprecision(2)<<*cgpaptr<<endl;
 
     }
     ~Teacher(){
-    delete cgpaptr;
+    delete cgpaptr; 
 }
 };
 int main(){
