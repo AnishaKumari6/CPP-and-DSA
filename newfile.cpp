@@ -7,5 +7,9 @@ int main(){
         cout<<p.first<<" "<<p.second<<endl;
     }
     cout<<233;
+    cout<<endl;
+    for(auto &p:v){     
+        cout<<p.first<<" "<<p.second<<endl;
+    }
 }
 
