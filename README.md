@@ -52,3 +52,22 @@ Mostly unsigned long hota hai
                     return slow;
                 }
             };
+
+
+283. Move Zeroes
+     is ques mai main logic swap ka tha isme hme is chiz pe dhyan dena hai ki i and j mai j tabhi move krega jab i!=0 hoga      ,isme i aage non-zero values ke pas jayega aur j zero pe hi rhega aur tab hi swap honge values
+
+               class Solution {
+          public:
+              void moveZeroes(vector<int>& nums) {
+                  int j=0;
+                  for(int i=0;i<nums.size();i++){
+                      if(nums[i]!=0){
+                          swap(nums[i],nums[j]);
+                          j++;
+                      }
+                  }
+          
+              }
+          };
+     iska ek aur method hai jisme hmm combing array ka concept use kar sakte hai jisme hmm j=0 rkhenge and jab i!=0 toh nums[j]=nums[i] jiski wajah se sare non-zero values pehle sorted way may store honge aur zeroes ke liye ek loop lgega isme j<nums.size() krenge aur nums[j]=0.......aisehi last mai sare zeros store kar lenge.
