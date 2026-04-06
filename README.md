@@ -71,3 +71,25 @@ Mostly unsigned long hota hai
               }
           };
      iska ek aur method hai jisme hmm combing array ka concept use kar sakte hai jisme hmm j=0 rkhenge and jab i!=0 toh nums[j]=nums[i] jiski wajah se sare non-zero values pehle sorted way may store honge aur zeroes ke liye ek loop lgega isme j<nums.size() krenge aur nums[j]=0.......aisehi last mai sare zeros store kar lenge.
+
+26.Remove Duplicates from Sorted Array
+
+               class Solution {
+               public:
+               int removeDuplicates(vector<int>& nums) {
+                  map<int,int>mp;
+                  int sum=0;
+                  int j=0;
+                  for(int i=0;i<nums.size();i++){
+                      mp[nums[i]]++;
+                  }
+                  nums.clear();
+                  for(auto &i:mp){
+                      sum++;
+                      nums.push_back(i.first);
+                      j++;
+                  }
+                  return sum;
+                  
+               }
+               };
