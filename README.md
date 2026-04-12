@@ -1,4 +1,4 @@
-3658. GCD of Odd and Even Sums
+3658. GCD of Odd and Even Sum
 
 541. Reverse String II
      
