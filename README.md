@@ -95,3 +95,11 @@ Mostly unsigned long hota hai
                   
                }
                }
+Majority Element Problem: Find the element that appears more than n/2 times in an array.
+
+Brute Force: Count occurrences for each element with nested loops.
+
+Better Approach: Use hashing (maps) to store frequencies efficiently.
+
+Best Approach (Moore’s Voting Algorithm): Selects a candidate and adjusts a counter based on matches/mismatches, then verifies if the candidate is truly the majority. This runs in linear time and constant space.
+               
