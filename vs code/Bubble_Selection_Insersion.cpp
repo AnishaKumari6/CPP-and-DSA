@@ -29,14 +29,26 @@ int main()
     // }
 
     // selection sort
-    for(int i=0;i<6;i++){
-        int small=i;
-        for(int j=i+1;j<6;j++){
-            if(arr[j]<=arr[small]){
-                small=j;
-            }
+    // for(int i=0;i<6;i++){
+    //     int small=i;
+    //     for(int j=i+1;j<6;j++){
+    //         if(arr[j]<=arr[small]){
+    //             small=j;
+    //         }
+    //     }
+    //     swap(arr[i],arr[small]);
+    // }
+    
+    // Insertion Sort
+    for (int i=1;i<6;i++){
+        int curr=arr[i],prev=i-1;
+        while (prev>=0 &&arr[prev]>curr)
+        {
+            arr[prev+1]=arr[prev];
+            prev--;
         }
-        swap(arr[i],arr[small]);
+
+        arr[prev+1]=curr;
     }
     for(int i=0;i<6;i++){
         cout<<arr[i]<<" ";
